@@ -116,17 +116,18 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	}
 }
 
-.content {
-}
+
 .private {
 	@include flexbox();
+	background-color: #000;
+	margin-bottom: 75px;
 }
 .private__column {
 	flex: 0 0 50%;
-	background-color: #000;
+	
 }
 .private__image {
-	background: url(/img/block_1/01.jpg) no-repeat;
+	background: url(/img/private/01.jpg) no-repeat;
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -156,12 +157,7 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 .private-body-buttons {
 	@include flexbox();
 }
-.private-body-buttons__item {
-}
-.btn {
-}
-.btn--w {
-}
+
 .private-body-buttons__link {
 	font-family: Bebas;
 	font-size: 15px;
@@ -173,5 +169,58 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	margin: 0 0 0 15px;
 }
 //====================================================================================================
-
+.products {
+}
+.container {
+}
+.products-body {
+	@include flexbox();
+}
+.products__column {
+	
+	flex: 0 0 25%;
+	@include flexbox();
+}
+.products-item {
+	@include flexbox();
+	flex-direction: column;
+	height: 100%;
+}
+.products-item__image {
+	display: block;
+	margin-bottom: 25px;
+}
+.products-item__title {
+	display: inline-block;
+	max-width: 175px;
+	font-family: AkzidenzGroteskBQBdCnd;
+	font-size: 25px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #000000;
+	margin-bottom: 30px;
+}
+.products-item__text {
+	flex: 1 1 auto;
+	max-width: 175px;
+	font-size: 15px;
+	line-height: 25px;
+	color: #000000	;
+	margin-bottom: 30px;
+}
+.products-item__btn {
+	margin-bottom: 25px;
+}
+.btn {
+}
+.products-item__link {
+	font-family: Bebas;
+	font-size: 15px;
+	line-height: 25px;
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
 //</ОСНОВНОЙ БЛОК>====================================================================================================
