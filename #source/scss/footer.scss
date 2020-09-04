@@ -1,5 +1,29 @@
-footer{}
 //====================================================================================================
+.footer-body {
+	@include flexbox();
+	height: 125px;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer-body__column {
+	flex: 0 0 50%;
+}
+.footer__copyright {
+	font-size: 15px;
+	line-height: 25px;
+	color: #4d4d4d;
+	text-align: left;
+	a {
+		text-decoration: underline;
+		color: #4d4d4d;
+		&:hover {
+			text-decoration: none;
+		}
+	}
 
+}
+.footer__logo {
+	text-align: right;
+}
 //====================================================================================================
 
