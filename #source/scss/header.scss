@@ -25,8 +25,6 @@ header {
 		color: #fff;
 		background-color: #000;
 	}
-	&__item {
-	}
 }
 .header-top__link {
 	font-family: AkzidenzGroteskBQBdCnd;
@@ -45,13 +43,9 @@ header {
 		flex: 0 0 33.333%;
 	}
 }
-.header-bottom-menu {
-}
 .header-bottom-menu-list {
 	@include flexbox();
 	justify-content: space-between;
-	li {
-	}
 }
 .header-bottom-menu-link {
 	font-family: "AkzidenzGroteskBQBdCnd";
@@ -59,7 +53,44 @@ header {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	color: #000000;
+	position: relative;
+	overflow: hidden;
+	line-height: 25px;
+	display: inline-block;
 }
+/* ------------ */
+.header-bottom-menu-link:before,
+.header-bottom-menu-link:after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+.header-bottom-menu-link:before {
+	border-bottom: 2px solid #000;
+	left: -100%;
+}
+.header-bottom-menu-link:after {
+	left: 0;
+	bottom: -100%;
+	background-color: rgb(0, 0, 0);
+	z-index: -1;
+}
+.header-bottom-menu-link:hover:before {
+	left: 0;
+	transition: all 0.5s ease 0s;
+}
+.header-bottom-menu-link:hover:after {
+	bottom: 0;
+	transition: all 0.5s ease 0.5s;
+}
+.header-bottom-menu-link:hover {
+	color: #fff;
+	transition-delay: 0.75s;
+	z-index: 1;
+}
+/* ----------------- */
+
 .header-logo {
 	display: block;
 	text-align: center;

@@ -166,6 +166,7 @@ header {
   color: #fff;
   background-color: #000;
 }
+
 .header-top__link {
   font-family: AkzidenzGroteskBQBdCnd;
   font-size: 15px;
@@ -200,14 +201,63 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
 .header-bottom-menu-link {
   font-family: "AkzidenzGroteskBQBdCnd";
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #000000;
+  position: relative;
+  overflow: hidden;
+  line-height: 25px;
+  display: inline-block;
 }
 
+/* ------------ */
+.header-bottom-menu-link:before,
+.header-bottom-menu-link:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.header-bottom-menu-link:before {
+  border-bottom: 2px solid #000;
+  left: -100%;
+}
+
+.header-bottom-menu-link:after {
+  left: 0;
+  bottom: -100%;
+  background-color: black;
+  z-index: -1;
+}
+
+.header-bottom-menu-link:hover:before {
+  left: 0;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.header-bottom-menu-link:hover:after {
+  bottom: 0;
+  -webkit-transition: all 0.5s ease 0.5s;
+  -o-transition: all 0.5s ease 0.5s;
+  transition: all 0.5s ease 0.5s;
+}
+
+.header-bottom-menu-link:hover {
+  color: #fff;
+  -webkit-transition-delay: 0.75s;
+       -o-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+  z-index: 1;
+}
+
+/* ----------------- */
 .header-logo {
   display: block;
   text-align: center;
