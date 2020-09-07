@@ -448,6 +448,10 @@ header {
   margin: 0 0 0 15px;
 }
 
+.products {
+  margin-bottom: 65px;
+}
+
 .products-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -690,8 +694,6 @@ header {
   position: relative;
   overflow: hidden;
 }
-
-/* animation social icons */
 .contacts-social__item:before {
   position: absolute;
   content: "";
@@ -706,11 +708,9 @@ header {
           transform: translate(-50%, -50%);
   z-index: -1;
 }
-
 .contacts-social__item:hover {
   overflow: visible;
 }
-
 .contacts-social__item:hover:before {
   width: 0;
   height: 0;
@@ -720,7 +720,6 @@ header {
   transition: all 0.7s ease-in 0s;
 }
 
-/* ---------------------- */
 .contacts-content {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -212,6 +212,9 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	margin: 0 0 0 15px;
 }
 //====================================================================================================
+.products {
+	margin-bottom: 65px;
+}
 .products-body {
 	@include flexbox();
 }
@@ -369,30 +372,28 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	margin-right: 30px;
 	position: relative;
 	overflow: hidden;
+	&:before {
+		position: absolute;
+		content: '';
+		width: 180%;
+		height: 180%;
+		border: 2px solid #000;
+		border-radius: 50%;
+		left: 50%;
+		top: 50%;
+		transform:translate(-50%,-50%);
+		z-index: -1;
+	}
+	&:hover {
+		overflow: visible;
+		&:before {
+			width: 0;
+			height: 0;
+			border: 0px solid rgb(255, 255, 255);
+			transition: all 0.7s ease-in 0s;
+		}
+	}
 }
-/* animation social icons */
-.contacts-social__item:before {
-	position: absolute;
-	content: '';
-	width: 180%;
-	height: 180%;
-	border: 2px solid #000;
-	border-radius: 50%;
-	left: 50%;
-	top: 50%;
-	transform:translate(-50%,-50%);
-	z-index: -1;
-}
-.contacts-social__item:hover {
-	overflow: visible;
-}
-.contacts-social__item:hover:before {
-	width: 0;
-	height: 0;
-	border: 0px solid rgb(255, 255, 255);
-	transition: all 0.7s ease-in 0s;
-}
-/* ---------------------- */
 .contacts-content {
 	@include flexbox();
 	background-color: #000;
