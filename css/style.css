@@ -2,15 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 @font-face {
   font-family: "AkzidenzGroteskBQBdCnd";
-  src: url("../../fonts/AkzidenzGroteskBQBdCnd.eot");
-  src: local("☺"), url("../../fonts/AkzidenzGroteskBQBdCnd.woff") format("woff"), url("../../fonts/AkzidenzGroteskBQBdCnd.ttf") format("truetype"), url("../../fonts/AkzidenzGroteskBQBdCnd.svg") format("svg");
+  src: url("../fonts/AkzidenzGroteskBQBdCnd.eot");
+  src: local("☺"), url("../fonts/AkzidenzGroteskBQBdCnd.woff") format("woff"), url("../fonts/AkzidenzGroteskBQBdCnd.ttf") format("truetype"), url("../fonts/AkzidenzGroteskBQBdCnd.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Bebas";
-  src: url("../../fonts/BebasRegular.eot;");
-  src: local("☺"), url("../../fonts/BebasRegular.woff") format("woff"), url("../../fonts/BebasRegular.ttf") format("truetype"), url("../../fonts/BebasRegular.svg") format("svg");
+  src: url("../fonts/BebasRegular.eot;");
+  src: local("☺"), url("../fonts/BebasRegular.woff") format("woff"), url("../fonts/BebasRegular.ttf") format("truetype"), url("../fonts/BebasRegular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -398,8 +398,7 @@ header {
 }
 
 .private__image {
-  background: url(/img/private/01.jpg) no-repeat;
-  background-size: cover;
+  background: url(../img/private/01.jpg) center center/cover no-repeat;
   width: 100%;
   height: 100%;
 }
@@ -548,7 +547,7 @@ header {
 }
 
 .why-top__image {
-  background: url(/img/why/01.jpg) 0 0 no-repeat;
+  background: url(img/why/01.jpg) 0 0 no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -671,15 +670,15 @@ header {
 }
 
 .contacts-body__item--1 {
-  background: url(/img/contacts/01.svg) left no-repeat;
+  background: url(img/contacts/01.svg) left no-repeat;
 }
 
 .contacts-body__item--2 {
-  background: url(/img/contacts/02.svg) left no-repeat;
+  background: url(img/contacts/02.svg) left no-repeat;
 }
 
 .contacts-body__item--3 {
-  background: url(/img/contacts/03.svg) left no-repeat;
+  background: url(img/contacts/03.svg) left no-repeat;
 }
 
 .contacts-social {
